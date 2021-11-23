@@ -1,0 +1,15 @@
+.suggest-input {
+  height: auto;
+  background-color: #eaf6fd;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.76563rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  // &:focus {
+  //   background-color: #fbfaef;
+  // }
+}
+
+div.v-suggest input[type=text] {
+  border: 0 !important;
+}

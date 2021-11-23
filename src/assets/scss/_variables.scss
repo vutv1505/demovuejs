@@ -1,0 +1,112 @@
+/*
+* Scaffolding
+* 基本的に変数の指定をする
+*/
+
+$primary: #425169 !default;
+
+/* Color Font
+============== */
+$main-color: #0071be;
+$sub-color: #72a2d6;
+$sub-selected-color: rgb(90, 130, 173);
+
+$text-sub-color: #0071be;
+$text-color: #333333;
+$bg-color: #868686;
+$gray-out: #c0c0c0;
+$text-area-color: #f5f9fd;
+$search-filter-color: #006ec7;
+
+$header-color: #666666;
+$table-header-color: #fafaf9;
+$table-disable-color: #eee;
+$contract-color: #1bb6a7;
+$selected-color: #006ec7;
+$accent-color: #ef5151;
+
+$hot-rebra-color: #f2f2f2;
+$hot-header-x-color: #74c7f0;
+$hot-header-y-color: #74c7f0;
+
+// original color
+$bubbles-white: #eaf6fd;
+$beni-iro: #e30021;
+$strawberry: #e72c2e;
+$cheryy-bonbon: #e3364a;
+$yellow-peach: #ffc107;
+$light-coral: #f6bba6;
+$shiny-pink: #f7c6bd;
+$meringue: #fdf0f1;
+$powder-orange: #fce2cc;
+$white-peach: #fce7db;
+$maldives-blue: #74c7f0;
+$pale-sky-blue: #c2e5f9;
+$bright-turquoise: #00acdb;
+$blue-paradise: #005ea7;
+$chinese-blue: #008dd6;
+$vivid-blue: #253893;
+$gondoliere: #003376;
+
+$sales-changed-cell: rgb(250, 255, 189);
+$color_viking_approx: #6cc0e5;
+
+$atlantis: #92d050;
+$pigment-green: #00b050;
+$navy-blue: #0070c0;
+$bittersweet: #f86c6b;
+$warning-cl: #d99511;
+
+@mixin datepickerLabel {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: calc(1.5em + 0.5rem + 2px);
+  font-size: 0.76563rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  border: 1px solid #e4e7ea;
+  margin-bottom: 0;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    right: -28px;
+    width: 22px;
+    height: 22px;
+    // background-color: #20a8d8;
+    // background-image: url('/src/assets/images/icon_calendar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  input[type='date'] {
+    position: relative;
+    width: 110px;
+    height: calc(1.5em + 0.5rem + 2px);
+    font-size: 0.76563rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    color: #5c6873;
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &::-webkit-clear-button {
+      -webkit-appearance: none;
+    }
+    &::-webkit-calendar-picker-indicator {
+      position: absolute;
+      right: -26px;
+      top: 2px;
+      padding: 0;
+      width: 22px;
+      height: 22px;
+      background: rgba(255, 150, 0, 0);
+      color: transparent;
+      cursor: pointer;
+    }
+  }
+}

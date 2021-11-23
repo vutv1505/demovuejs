@@ -1,0 +1,336 @@
+.card-lowest-price,
+.card-order-detail,
+.card-accepting-detail,
+.card-stock-detail,
+.card-set-item,
+.card-henko-rireki,
+.card-siki-kakaku {
+  .handsontable .ht_master .wtHolder {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+.handsontable .htCheckboxRendererInput.noValue {
+  opacity: 1 !important;
+}
+
+.handsontable {
+  th {
+    // 見出し（横）の色定義
+    background-color: $hot-header-x-color !important;
+    vertical-align: middle !important;
+
+    &:first-child {
+      // 見出し（縦）の色定義
+      background-color: $hot-header-y-color !important;
+    }
+  }
+
+  .ht_master {
+    tr {
+      // 奇数行の色定義
+      // &:nth-of-type(odd) {
+      //   & > td {
+      //     background-color: $hot-rebra-color;
+      //   }
+      // }
+      // 偶数行の色定義
+      &:nth-of-type(even) {
+        & > td {
+          background-color: $hot-rebra-color;
+        }
+      }
+    }
+  }
+
+  .isDirty {
+    background: yellow !important;
+  }
+
+  .link {
+    color: #00acdb;
+
+    &:hover {
+      color: #2244ff;
+      text-decoration: underline;
+    }
+  }
+
+  .read-only {
+    // background-color: $pale-sky-blue;
+    background-color: $table-disable-color;
+  }
+
+  .autocompleteEditor {
+    .ht_master{
+      .htCore{
+        border: 1px solid #5292F7;
+      }
+    }
+  }
+  &.listbox {
+    td {
+      background: white !important;
+    }
+  }
+
+  tbody {
+    tr {
+      th {
+        vertical-align: middle !important;
+      }
+    }
+  }
+
+  td {
+    &.custom-checkbox {
+      label {
+        vertical-align: middle;
+        padding: 5px 0;
+        margin-bottom: 0!important;
+        [type="checkbox"] {
+          display: none;
+        }
+      }
+      [type="checkbox"] + span {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $color_viking_approx;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all .12s, border-color .08s;
+      }
+      :checked + span {
+        width: 9px;
+        margin-bottom: 2px;
+        margin-top: -2px;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: rotate(45deg);
+      }
+    }
+    &.fm-cell-hidden-text {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &.target-checkbox input {
+      margin: 0 !important;
+    }
+  }
+
+  .bg-color span {
+    font-size: 80%;
+    margin-right: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .bg-atlantis {
+    background: $atlantis !important;
+  }
+
+  .bg-pigment-green {
+    background: $pigment-green !important;
+  }
+
+  .bg-navy-blue {
+    background: $navy-blue !important;
+  }
+
+  .bg-strawberry {
+    background: $strawberry !important;
+  }
+
+  .bg-bittersweet {
+    background: $bittersweet !important;
+  }
+
+  .ht_clone_left, .ht_clone_top, .ht_clone_bottom {
+    .wtHolder {
+      width: 100% !important;
+    }
+  }
+
+  .ht_master {
+    width: 100% !important;
+    .wtHolder {
+      width: 100% !important;
+    }
+  }
+}
+
+// カレンダーの色付け
+.pika-lendar {
+  th {
+    &:first-child {
+      color: #f00;
+    }
+
+    &:last-child {
+      color: #00f;
+    }
+  }
+
+  td {
+    &:first-child {
+      .pika-button {
+        color: #f00;
+      }
+    }
+
+    &:last-child {
+      .pika-button {
+        color: #00f;
+      }
+    }
+  }
+}
+
+.changed-cell {
+  background-color: $sales-changed-cell !important;
+}
+
+.current-row {
+  background-color: #BBB !important;
+}
+
+.htComments {
+  .htCommentTextArea {
+    color: red;
+    font-size: 12px !important;
+  }
+}
+
+.handsontable {
+  .changeType {
+    border: 1px solid #000 !important;
+    color: #000 !important;
+  }
+  .htFiltersActive {
+    .changeType {
+      background-color: red !important;
+    }
+  }
+  .htDimmed {
+    .htAutocompleteArrow {
+      display: none;
+    }
+  }
+}
+
+.htDropdownMenu {
+  .wtSpreader {
+    position: absolute !important;
+    width: 350px !important;
+    >.htCore {
+      width: 100% !important;
+      >tbody tr td {
+        word-wrap: break-word;
+        white-space: normal;
+        >.htCheckboxRendererLabel {
+          width: 86% !important;
+        }
+      }
+    }
+  }
+  .htUIMultipleSelectHot {
+    height: auto !important;
+    .wtHolder {
+      height: unset !important;
+      max-height: 30vh;
+    }
+    .wtHolder::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+      background-color: #fff;
+    }
+    .wtHolder::-webkit-scrollbar {
+      width: 6px;
+      background-color: #fff;
+    }
+    .wtHolder::-webkit-scrollbar-thumb {
+      background-color: #666;
+    }
+  }
+}
+
+.handsontable th {
+  color: #000;
+  visibility: visible !important;
+}
+
+.handsontable .manualColumnResizer {
+  position: absolute;
+}
+
+.handsontable .manualColumnResizerGuide {
+  position: absolute;
+}
+
+.handsontable .manualRowResizerGuide {
+  position: absolute;
+}
+
+.handsontable .htDimmed {
+  color: #000;
+}
+
+.handsontable .htAutocompleteArrow {
+  color: #000;
+}
+
+.handsontable .htCheckboxRendererLabel {
+  font-size: inherit;
+  vertical-align: middle;
+}
+
+.collapsibleIndicator {
+  color: #000;
+}
+
+
+.htMobileEditorContainer .moveHandle:after {
+  content: "..\a..\a..\a..";
+}
+
+.handsontable .changeType {
+  border: 1px solid #333;
+  color: #333;
+}
+
+.handsontable .changeType:before {
+  content: '\25BC\ ';
+}
+
+
+.handsontable .changeType:hover {
+  border: 1px solid #74c7f0;
+  color: #74c7f0;
+}
+
+.handsontable .htFiltersMenuCondition .htUIInput input,
+.handsontable .htFiltersMenuValue .htUIMultipleSelectSearch input {
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.handsontable .htUIInput.htUIButton input {
+  font-family: inherit;
+}
+
+.handsontable .htUISelectCaption {
+  font-family: inherit;
+}
+
+.handsontable .htUIRadio label {
+  vertical-align: middle;
+}
+
+.handsontable.listbox tr td.current,
+.handsontable.listbox tr:hover td {
+  background: #eee !important;
+}

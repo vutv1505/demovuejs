@@ -1,0 +1,28 @@
+.valid-msg-area {
+  font-size: 0.76563rem;
+  color: $beni-iro;
+  &.warning {
+    color: $warning-cl;
+  }
+}
+
+.suggest-input {
+  &.is-invalid {
+    background-color: $meringue;
+  }
+}
+
+.screw-margin {
+  margin-bottom: -0.5rem;
+
+  .form-required {
+    border: solid 1px $cheryy-bonbon;
+    border-radius: 2px;
+    padding: 0 4px;
+    margin-left: 4px;
+  }
+}
+
+.form-required {
+  color: $cheryy-bonbon;
+}

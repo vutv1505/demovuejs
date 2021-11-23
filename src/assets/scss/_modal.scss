@@ -1,0 +1,98 @@
+.modal {
+  padding: 0 !important;
+  overflow-y: hidden !important;
+
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        padding: 10px;
+        background-color: $bubbles-white;
+      }
+
+      .modal-body {
+        .del-img-icon {
+          color: $beni-iro;
+          font-size: 5em;
+        }
+      }
+
+      .modal-footer {
+        background-color: $bubbles-white;
+      }
+    }
+  }
+}
+
+// 特大レイアウト
+.modal-dialog {
+  &.modal-xxl {
+    max-width: 1600px;
+  }
+}
+
+.mw-95 {
+  width: 95vw;
+  max-width: 95vw;
+}
+
+.footer-container {
+  background-color: transparent !important;
+  border-top: unset;
+}
+
+.header-container {
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+  background-color: #f0f4f6;
+  padding: 10px;
+}
+
+.modal-content {
+  max-height: 90vh;
+
+  .modal-max-height {
+    height: 90vh;
+  }
+  .body-item-header {
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: calc(0.3rem - 1px);
+  }
+
+  .modal-border {
+    border: 1px solid #7f7f7f;
+    &-top {
+      border-top: 1px solid #7f7f7f;
+      &-left-radius {
+        border-top-left-radius: calc(0.3rem - 1px);
+      }
+      &-right-radius {
+        border-top-right-radius: calc(0.3rem - 1px);
+      }
+    }
+    &-bottom {
+      border-bottom: 1px solid #7f7f7f;
+      &-left-radius {
+        border-bottom-left-radius: calc(0.3rem - 1px);
+      }
+      &-right-radius {
+        border-bottom-right-radius: calc(0.3rem - 1px);
+      }
+    }
+    &-left {
+      border-left: 1px solid #7f7f7f;
+    }
+    &-right {
+      border-right: 1px solid #7f7f7f;
+    }
+  }
+
+  .modal-btn {
+    width: 8rem;
+    margin-left: 0;
+  }
+
+  .label-field-no-wrap {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,33 @@
+// フォーム内項目
+.form-control[readonly], .form-control:disabled {
+  border: 1px solid #e4e7ea;
+}
+.form-danger {
+  border-color: red;
+  background-color: #ffeeee;
+}
+.from-item {
+  margin-left: 20px;
+}
+
+// ドロップダウンメニューボタン
+.drop-menu-area {
+  height: 30px;
+  .btn {
+    background-color: #fff;
+  }
+  .drop-menu-btn {
+    color: #73818f !important;
+  }
+}
+
+// ドロップダウンメニュー（追加、編集、削除等）
+.dropdown-menu {
+  .dropdown-item {
+    padding: 6px 20px !important;
+    &.disabled {
+      background-color: #eee;
+      cursor: not-allowed !important;
+    }
+  }
+}

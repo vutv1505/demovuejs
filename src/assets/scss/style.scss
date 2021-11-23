@@ -1,0 +1,42 @@
+// If you want to override variables do it here
+// 変数(色等)やミックスインの定義
+@import 'variables';
+
+// Import styles with default layout.
+// If you are going to use dark layout please comment next line
+@import '~@coreui/coreui-pro/scss/coreui';
+
+// Import styles with dark layout
+// If you want to use dark layout uncomment next line
+//@import "~@coreui/coreui-pro/scss/themes/dark/coreui-dark";
+
+// If you want to add something do it here
+@import 'custom';
+
+// ie fixes
+@import 'ie-fix';
+
+// レイアウト調整（余白の縮小等）のスタイル定義
+@import 'layout';
+
+// モーダル用レイアウト調整のスタイル定義
+@import 'modal';
+
+// バリデーションエラーのスタイル定義
+@import 'validate';
+
+// トースターのスタイル定義
+@import 'toastr';
+
+// サジェストのスタイル定義
+@import 'suggest';
+
+// handsontableのスタイル定義
+@import 'handsontable';
+
+// 各パーツのスタイル定義
+@import 'components';
+
+@import 'popover';
+
+@import 'table';

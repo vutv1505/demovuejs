@@ -1,0 +1,18 @@
+.mini-toastr {
+  position: fixed;
+  z-index: 99999;
+  // right: auto !important;
+  top: auto !important;
+  // left: 12px !important;
+  bottom: 12px !important;
+  .mini-toastr__notification {
+    // opacity: 0.9;
+    width: auto;
+    &.-success {
+      background-color: rgba(32, 168, 216, 1);
+    }
+    .mini-toastr-notification__message {
+      white-space: pre-wrap;
+    }
+  }
+}
