@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< Updated upstream
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -52,6 +53,10 @@ typings/
 
 # Optional eslint cache
 .eslintcache
+=======
+pnpm-debug.log*
+pakage-lock.json
+>>>>>>> Stashed changes
 
 # Microbundle cache
 .rpt2_cache/
